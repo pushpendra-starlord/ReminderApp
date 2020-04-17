@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".CreateReminderActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinnerNoteType"
+            android:layout_alignParentBottom="true">
+
+            <GridLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            </GridLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtTitle"
+                android:background="@drawable/border_design"
+                android:paddingLeft="7dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingEnd="2dp"
+                android:maxLength="25"
+                android:textColor="@android:color/holo_orange_dark"
+                android:hint="@string/title_hint"
+                android:layout_below="@+id/btnBack"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:singleLine="true"
+                android:layout_marginBottom="7dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView4" >
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/description"
+                    android:background="@drawable/border_design"
+                    android:paddingLeft="7dp"
+                    android:hint="@string/hint_description"
+                    android:layout_below="@+id/txtTitle"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:singleLine="false"
+                    android:lines="5"
+                    android:maxLength="140"
+                    android:nestedScrollingEnabled="false" />
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/reminder_type_text"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/txtNoteType"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_below="@+id/description"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/holo_red_light"></View>
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinnerNoteType"
+                    android:entries="@array/reminder_type"
+                    android:spinnerMode="dropdown"
+                    android:layout_below="@+id/description"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/holo_red_light"></View>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do U Want to Set Alert?"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_alert"
+                    android:textSize="18sp"
+                    android:id="@+id/checkBox"
+                    android:layout_margin="3dp"
+                    android:layout_below="@+id/spinnerNoteType"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:enabled="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Do U Want to Notify?Choose Notify"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/set_alert"
+                    android:textSize="18sp"
+                    android:id="@+id/checkBox2"
+                    android:layout_margin="3dp"
+                    android:layout_below="@+id/spinnerNoteType"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:enabled="false"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="10dp">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/textview_date"
+                        android:textColor="@color/colorPrimary"
+                        android:backgroundTint="@color/colorAccent"
+                        android:layout_marginRight="20sp"
+                        android:id="@+id/btnDate"
+                        android:background="@drawable/border_design"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/textview_date"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/txtDateValue" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/txt_time"
+                        android:backgroundTint="@color/colorAccent"
+                        android:background="@drawable/border_design"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/btnTime" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="@string/txt_time"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/txtTimeValue"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+
+<resources>
+
+    <string name="app_name">Reminder App</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_about">About</string>
+
+    <string name="title_activity_create_reminder">Create Note</string>
+
+    <string name="title">Test</string>
+
+    <string name="detail">Small Text</string>
+
+
+    <string-array name="reminder_type">
+        <item>Alarm Only</item>
+        <item>Notification Only</item>
+
+    </string-array>
+
+    <string name="title_activity_information">Information</string>
+
+    <string name="title_activity_edit__reminder">Edit Reminder</string>
+
+    <string name="New">Create New Reminder</string>
+
+    <string name="back">Back to Main</string>
+
+    <string name="save">Save Reminder</string>
+
+    <string name="edit">Edit Reminder</string>
+
+    <string name="discard">Discard Reminder</string>
+
+    <string name="reminder_type_text">Choose Reminder Type:</string>
+
+    <string name="title_activity_alert">Alert</string>
+
+    <string name="Not_Set">Not Set</string>
+
+    <string name="hour_minutes">HH:mm</string>
+
+
+    <string name="set_notify">Set Notification</string>
+    <string name="added_alert">An Alert can be added</string>
+    <string name="notify">You can receive notifications</string>
+    <string name="rodId">rowID</string>
+
+    <string name="alertNotify">"Alert: "</string>
+
+    <string name="alertTitle">title</string>
+
+    <string name="delete_title">Delete Selected Task</string>
+
+    <string name="delete_message">Are you sure?</string>
+
+    <string name="yes">Yes</string>
+
+    <string name="no">No</string>
+
+    <string name="rodID">rowID</string>
+
+    <string name="rowID">rowID</string>
+
+    <string name="row_id">rowID</string>
+
+    <string name="intent_row_id">rowID</string>
+
+    <string name="row_id_long">rowID</string>
+
+    <string name="alarm_active">An Alert can be added!</string>
+
+    <string name="row_id_log">rowID</string>
+
+    <string name="title_hint">Enter Task</string>
+
+    <string name="hint_description">Enter Task Description</string>
+
+    <string name="set_alert">Set Alert</string>
+
+    <string name="textview_date">Select Date</string>
+
+    <string name="txt_time">Select Time</string>
+
+    <string name="txt_edit_hint">Enter Title</string>
+
+    <string name="detail_hint">Enter Description</string>
+
+    <string name="type_reminder">Reminder Type:</string>
+
+    <string name="view_title">Large Text</string>
+
+    <string name="view_detail">Medium Text</string>
+
+    <string name="note_type">Medium Text</string>
+
+    <string name="type_list_entry">Small Text</string>
+
+    <string name="time_vie">test Time</string>
+
+    <string name="alarmText">Alert: </string>
+
+    <string name="dateFormat">dd/MM/yyyy</string>
+
+    <string name="Not_Set_Alert">Not Set</string>
+
+    <string name="ok">Okay</string>
+
+    <string name="title_msg">title</string>
+
+
+    <string name="alert_content">alert_content</string>
+
+</resources>
