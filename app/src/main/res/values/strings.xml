@@ -13,6 +13,7 @@
     <string name="title">Test</string>
 
     <string name="detail">Small Text</string>
+    <string name="creatorDesc">Made by Pushpendra Tripathi\nReg. No. 11704081\nSection: KM041\nRoll No. 8</string>
 
 
     <string-array name="reminder_type">
@@ -24,6 +25,8 @@
     <string name="title_activity_information">Information</string>
 
     <string name="title_activity_edit__reminder">Edit Reminder</string>
+
+    <string name="description">This app is capable of recording reminders and schedule alarm or notification for that reminder.</string>
 
     <string name="New">Create New Reminder</string>
 

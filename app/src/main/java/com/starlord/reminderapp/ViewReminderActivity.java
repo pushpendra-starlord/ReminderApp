@@ -23,6 +23,7 @@ public class ViewReminderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_reminder);
         final long id = getIntent().getExtras().getLong(getString(R.string.row_id));
 
+        getSupportActionBar().setTitle("Detailed View");
         dbHelper = new DbHelper(this);
         db = dbHelper.getWritableDatabase();
 

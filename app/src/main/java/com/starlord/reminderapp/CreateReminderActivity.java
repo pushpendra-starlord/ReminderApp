@@ -55,6 +55,7 @@ public class CreateReminderActivity extends AppCompatActivity {
         mDbHelper = new DbHelper(this);
         db = mDbHelper.getWritableDatabase();
 
+        getSupportActionBar().setTitle("Create Reminder");
         mTitleText = findViewById(R.id.txtTitle);
         mDescriptionText = findViewById(R.id.description);
         mSpinner = findViewById(R.id.spinnerNoteType);
