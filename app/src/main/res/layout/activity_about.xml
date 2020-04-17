@@ -45,6 +45,7 @@
         android:background="@drawable/border_design"
         android:backgroundTint="@android:color/holo_blue_dark"
         android:text="Back to Home"
+        android:id="@+id/btnHome"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/description" />
