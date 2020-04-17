@@ -93,6 +93,10 @@ public class ViewReminderActivity extends AppCompatActivity {
                         .setNegativeButton(getString(R.string.no), null)
                         .show();
                 return true;
+            case R.id.action_about:
+                Intent openAboutActivity = new Intent(getApplicationContext(), AboutActivity.class);
+                startActivity(openAboutActivity);
+                return true;
 
             default:
                 return super.onOptionsItemSelected(item);
